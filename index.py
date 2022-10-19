@@ -5,6 +5,11 @@ from sslscan import SSLChecker
 from urllib.parse import urlparse
 app = Flask(__name__)
 
+@app.route('/status')
+@cross_origin(supports_credentials=True)
+def home():
+    return 'Server is running'
+
 @app.route('/securityheader', methods=["POST"])
 @cross_origin(supports_credentials=True)
 def securityheader():    
