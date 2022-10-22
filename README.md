@@ -1,4 +1,97 @@
-# Security Header Check
+# Flask Backend
+## Introduction
+
+This repo contains the flask backend server code which by default runs locally on the port 8000.
+
+## Deployed Link
+https://flask-backend-aman-codes.vercel.app/status
+
+## Pre-requisites
+
+Your machine should have Python3 installed to use it locally.
+
+## Setting up the repository locally
+
+1. Fork the repo to your account.
+
+2. Clone your forked repo to your local machine:
+Replace `<YOUR_GITHUB_USERNAME>` with your actual GitHub username in the below command. This will clone the code to your local machine.
+```
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/flaskbackend.git (https)
+```
+or
+```
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/flaskbackend.git (ssh)
+```
+
+3. Change directory to `flaskbackend`.
+```
+cd flaskbackend
+```
+
+4. Check the remote of your local repo by:
+```
+git remote -v
+```
+It should output the following:
+```
+origin	https://github.com/<YOUR_GITHUB_USERNAME>/flaskbackend.git (fetch)
+origin	https://github.com/<YOUR_GITHUB_USERNAME>/flaskbackend.git (push)
+```
+or
+```
+origin	git@github.com:<YOUR_GITHUB_USERNAME>/flaskbackend.git (fetch)
+origin	git@github.com:<YOUR_GITHUB_USERNAME>/flaskbackend.git (push)
+```
+
+5. Add remote upstream by running the below command:
+```
+git remote add upstream https://github.com/webevaluator/flaskbackend.git (https)
+```
+or
+```
+git remote add upstream git@github.com:webevaluator/flaskbackend.git (ssh)
+```
+
+6. Running `git remote -v` should then print the following:
+```
+origin	https://github.com/<username>/flaskbackend.git (fetch)
+origin	https://github.com/<username>/flaskbackend.git (push)
+upstream	https://github.com/webevaluator/flaskbackend.git (fetch)
+upstream	https://github.com/webevaluator/flaskbackend.git (push)
+```
+or
+```
+origin	git@github.com:<username>/flaskbackend.git (fetch)
+origin	git@github.com:<username>/flaskbackend.git (push)
+upstream	git@github.com:webevaluator/flaskbackend.git (fetch)
+upstream	git@github.com:webevaluator/flaskbackend.git (push)
+```
+
+## Run locally
+
+1. To create a virtual environment run 
+```python
+python3 -m venv flask
+```
+
+2. To activate the virtual environment run 
+```
+source flask/bin/activate
+```
+
+3. To install the required dependencies run 
+```python
+pip install -r requirements.txt
+```
+
+4 Finally, for starting the server run:
+```
+python3 index.py
+```
+Go to: http://localhost:8000/status
+
+## Security Header Check
 
 Run app.py as flask app
 
@@ -36,7 +129,7 @@ will give results as follows:
 ```
 
 
-# SSL Checker API
+## SSL Checker API
 
 Run app.py as flask app
 
